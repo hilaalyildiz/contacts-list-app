@@ -1,16 +1,21 @@
-import React from 'react'
-import List from './List'
-import Form from './Form'
+import {useState, useEffect} from 'react'
+import List from "./List"
+import Form from "./Form"
 
 
 function Contacts() {
-  return (
+const [contacts,setContacts] = useState([])
+
+useEffect(() => {
+    console.log(contacts)
+},[contacts])
+
+return (
     <div>
         <List/>
-        <Form/>
+        <Form addContact = {setContacts} contacts ={contacts} />
     </div>
-
   )
 }
 
-export default index
+export default Contacts
