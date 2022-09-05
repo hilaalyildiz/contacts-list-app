@@ -47,4 +47,4 @@ return (<form onClick={onSubmit}>
   )
 }
 
-export default index
+export default Form

@@ -6,4 +6,4 @@ function List() {
   )
 }
 
-export default index
+export default List
